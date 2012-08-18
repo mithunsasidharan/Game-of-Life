@@ -38,11 +38,11 @@ and it's corresponding output would be :
 
 You can run the application from the root using the command :
 
-    $ ruby game.rb <input_pattern>
+    $ ruby bin/game.rb <input_pattern>
 
 For example, you can try running with the sample input files in the fixtures folder :
 
-    $ ruby game.rb fixtures/toad_pattern
+    $ ruby bin/game.rb fixtures/toad_pattern
 
 You can run the tests by running either of the following commands from the root of the application :
 

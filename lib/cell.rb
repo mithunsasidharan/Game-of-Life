@@ -4,9 +4,9 @@ class Cell
   attr_reader :state
 
   def initialize (x, y, state)
-	@x = x
-	@y = y
-	@state = @new_state = state
+	  @x = x
+	  @y = y
+	  @state = @new_state = state
   end
 
   def alive?
@@ -22,7 +22,7 @@ class Cell
   end
 
   def state=(value)
-   @new_state = value
+    @new_state = value
   end
   
 end
