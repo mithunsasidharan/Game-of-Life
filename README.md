@@ -7,7 +7,7 @@ The initial pattern is provided through an input file which has the live cell an
 	5.times do |ticker|
 		Tick.apply_rules(grid)
 		puts "Output Pattern"
-		Printer.display(grid)
+		grid.display
 	end
 
 A sample input file with initial pattern would like this :

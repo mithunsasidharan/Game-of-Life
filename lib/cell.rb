@@ -21,7 +21,7 @@ class Cell
     @state = @new_state
   end
 
-  def state=(value)
+  def update_state(value)
     @new_state = value
   end
   

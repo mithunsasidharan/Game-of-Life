@@ -9,12 +9,12 @@ class Tick
 			neighbouring_live_cells = grid.find_live_neighbouring_cells(cell).count
 
 			if cell.dead? && if_rebirth_possible?(neighbouring_live_cells)
-				cell.state = true
+				cell.update_state(true)
 			elsif cell.alive?
 				if if_cell_lonely?(neighbouring_live_cells)
-					cell.state = false
+					cell.update_state(false)
 				elsif if_cell_overcrowded?(neighbouring_live_cells)
-					cell.state = false
+					cell.update_state(false)
 				end
 
 			end

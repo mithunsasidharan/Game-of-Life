@@ -29,4 +29,18 @@ class Grid
 		@cells.each(&block)
 	end
 
+	def display
+		0.upto(self.height-1) do |y_axis|
+			self.cells.collect { |cell|
+				if cell.y == y_axis and cell.alive?
+					print "X "
+				elsif cell.y == y_axis and cell.dead?
+					print "- "
+				end
+			}
+			puts
+			y_axis += 1
+		end
+	end
+
 end

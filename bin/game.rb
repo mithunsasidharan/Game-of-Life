@@ -4,10 +4,10 @@ Dir[Pathname(__FILE__).dirname.realpath.to_s+'/../lib/*'].each {|file| require(f
 begin
 	grid = GridCreator.create_grid(ARGV[0])
 	puts "Input Pattern"
-	Printer.display(grid)
+	grid.display
 	Tick.apply_rules(grid)
 	puts "Output Pattern"
-	Printer.display(grid)
+	grid.display
 rescue
 	warn "Oops !! Make sure the input pattern file you specified exists."
 end

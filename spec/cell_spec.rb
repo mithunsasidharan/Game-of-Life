@@ -22,10 +22,10 @@ describe Cell do
 
   end
 
-  describe '#state=(value)' do
+  describe '#update_state(value)' do
 
     it "should set the cell state with new value" do
-      @cell.state=(true).should == true
+      @cell.update_state(true).should == true
     end
 
   end
