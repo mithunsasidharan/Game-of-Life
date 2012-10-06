@@ -10,7 +10,7 @@ The initial pattern is provided through an input file which has the live cell an
 		grid.display
 	end
 
-A sample input file with initial pattern would like this :
+A sample input grid with initial pattern would be like this :
 
     - - - - - - - - - - 
     - - - - - - - - - - 
@@ -23,7 +23,7 @@ A sample input file with initial pattern would like this :
     - - - - - - - - - - 
     - - - - - - - - - -
 
-and it's corresponding output would be :
+and it's corresponding output would look like this :
 
     - - - - - - - - - -
     - - - - - - - - - - 
