@@ -4,17 +4,17 @@ class Cell
   attr_reader :state
 
   def initialize (x, y, state)
-	  @x = x
-	  @y = y
-	  @state = @new_state = state
+    @x = x
+    @y = y
+    @state = @new_state = state
   end
 
   def alive?
-  	@state == true
+    @state == true
   end
 
   def dead?
-  	@state == false
+    @state == false
   end
 
   def update
